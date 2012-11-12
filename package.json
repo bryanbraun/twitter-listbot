@@ -1,0 +1,21 @@
+{
+  "author": "Sugendran Ganess <sugendran@sugendran.net>",
+  "name": "retweetbot",
+  "description": "A retweeting bot because free services on the net suck",
+  "private": true,
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sugendran/node-retweeter.git"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "tuiter": "~0.2.0"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}
