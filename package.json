@@ -1,14 +1,16 @@
 {
-  "author": "Bryan Braun <bbraun7@gmail.com>",
   "name": "twitter-listbot",
   "description": "A robot that retweets the contents of a twitter list.",
-  "private": true,
   "version": "0.0.1",
+  "homepage": "https://github.com/bryanbraun/twitter-listbot",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/bryanbraun/twitter-listbot.git"
   },
-  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/bryanbraun/twitter-listbot/issues"
+  },
   "dependencies": {
     "tuiter": "~0.2.12",
     "express": "~4.9.0"
@@ -18,5 +20,12 @@
   "engines": {
     "node": "0.8.x",
     "npm": "1.1.x"
-  }
+  },
+  "author": {
+    "name": "Bryan Braun",
+    "email": "bbraun7@gmail.com",
+    "url": "http://www.bryanbraun.com"
+  },
+  "private": true,
+  "license": "MIT"
 }
