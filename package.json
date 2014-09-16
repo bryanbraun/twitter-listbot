@@ -1,16 +1,16 @@
 {
-  "author": "Sugendran Ganess <sugendran@sugendran.net>",
-  "name": "retweetbot",
-  "description": "A retweeting bot because free services on the net suck",
+  "author": "Bryan Braun <bbraun7@gmail.com>",
+  "name": "twitter-listbot",
+  "description": "A robot that retweets the contents of a twitter list.",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sugendran/node-retweeter.git"
+    "url": "git://github.com/bryanbraun/twitter-listbot.git"
   },
   "main": "index.js",
   "dependencies": {
-    "tuiter": "~0.2.0"
+    "tuiter": "~0.2.12"
   },
   "devDependencies": {},
   "optionalDependencies": {},

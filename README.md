@@ -1,4 +1,8 @@
-Mister Retweet Bot
+Twitter Listbot
 ==================
 
-I went looking for a free retweetbot for Inktober but found nothing that worked very well. So I wrote this one in node.js - It's not perfect, but meh. Enjoy!
+This is a simple twitter bot, designed to retweet the contents of a twitter list.
+
+This implementation tweets for [@StoriesInData](https://twitter.com/StoriesInData).
+
+Twitter Listbot is written in node.js and based on [Sugendran](https://github.com/sugendran)'s [node-retweeter](https://github.com/sugendran/node-retweeter).
