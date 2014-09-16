@@ -1,10 +1,10 @@
-// START HEROKU CONFIG
+// START HEROKU SETUP
 var http = require("http");
 var express = require("express");
 var app = express();
 var server = http.createServer(app);
 server.listen(process.env.PORT || 5000);
-// END HEROKU CONFIG
+// END HEROKU SETUP
 
 
 // Listbot config
@@ -72,8 +72,8 @@ function onTweet(tweet) {
     if (regexFilter.test(tweet.text)) {
         console.log(tweet);
         console.log("RT: " + tweet.text);
-        // note we're using the id_str property since
-        // javascript is not accurate for 64bit ints
+        // Note we're using the id_str property since javascript is not accurate
+        // for 64bit ints.
         tu.retweet({
             id: tweet.id_str
         }, onReTweet);
@@ -91,7 +91,6 @@ function listen(listMembers) {
 }
 
 // The application itself.
-
 // Use the tuiter node module to get access to twitter.
 var tu = require('tuiter')(config.keys);
 
