@@ -1,11 +1,21 @@
+// START HEROKU CONFIG
+var http = require("http");
+var express = require("express");
+var app = express();
+var server = http.createServer(app);
+server.listen(process.env.PORT || 5000);
+// END HEROKU CONFIG
+
+
 // Listbot config
 //
 // Config.keys uses environment variables so sensitive info is not in the repo.
 var config = {
     me: 'StoriesInData', // The authorized account with a list to retweet.
     myList: 'data-driven-storytellers', // The list we want to retweet.
-    regexReject: '(RT|@)', // Reject any tweets matching this regex pattern.
     regexFilter: '', // Accept only tweets matching this regex pattern.
+    regexReject: '(RT|@)', // AND reject any tweets matching this regex pattern.
+
     keys: {
         consumer_key: process.env.TWITTER_CONSUMER_KEY,
         consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
@@ -14,8 +24,6 @@ var config = {
     },
 };
 
-
-// Functions
 
 // Get the members of our list, and pass them into a callback function.
 function getListMembers(callback) {
@@ -33,7 +41,7 @@ function getListMembers(callback) {
             // This callback is designed to run listen(memberIDs).
             callback(memberIDs);
         } else {
-            console.log(err);
+            console.log(error);
             console.log(data);
         }
     });
