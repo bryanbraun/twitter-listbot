@@ -1,9 +1,11 @@
 // START HEROKU SETUP
-var http = require("http");
+//var http = require("http");
 var express = require("express");
 var app = express();
-var server = http.createServer(app);
-server.listen(process.env.PORT || 5000);
+app.get('/', function(req, res){ res.send('The robot is happily running.'); });
+app.listen(process.env.PORT || 5000);
+//var server = http.createServer(app);
+//server.listen(process.env.PORT || 5000);
 // END HEROKU SETUP
 
 
