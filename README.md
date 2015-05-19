@@ -13,6 +13,8 @@ This implementation tweets for [@StoriesInData](https://twitter.com/StoriesInDat
 5. [Create a twitter application](https://apps.twitter.com/app/new), grant it the necessary access, and generate your tokens/keys.
 6. Deploy the bot to heroku (you can [use these instructions](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction) as a guide).
 
+For detailed setup instructions, see my blog post: [How to Set Up a Simple Javascript Twitter Bot](http://www.bryanbraun.com/2014/12/13/how-to-set-up-a-simple-javascript-twitter-bot)
+
 ## Credit
 Twitter Listbot is written in [node.js](http://nodejs.org/) and based on [Sugendran](https://github.com/sugendran)'s [node-retweeter](https://github.com/sugendran/node-retweeter).
 
