@@ -65,7 +65,7 @@ function onTweet(tweet) {
     if (tweet.retweeted) {
         return;
     }
-    if (regexReject.test(tweet.text)) {
+    if (config.regexReject !== '' && regexReject.test(tweet.text)) {
         return;
     }
     if (regexFilter.test(tweet.text)) {
