@@ -58,7 +58,7 @@ function onReTweet(err) {
 function onTweet(tweet) {
     // Reject the tweet if:
     //  1. it's flagged as a retweet
-    //  2. it's matches our regex rejection criteria
+    //  2. it matches our regex rejection criteria
     //  3. it doesn't match our regex acceptance filter
     var regexReject = new RegExp(config.regexReject, 'i');
     var regexFilter = new RegExp(config.regexFilter, 'i');
